@@ -1,0 +1,39 @@
+/*
+Group by, order by
+*/
+
+Select Gender
+From EmployeeDemographics
+Group by Gender
+
+Select Gender, count(gender)
+From EmployeeDemographics
+Group by Gender
+
+Select Gender, Age, count(gender)
+From EmployeeDemographics
+Group by Gender, Age
+
+Select Gender,count(gender)
+From EmployeeDemographics
+Where age > 31
+Group by Gender
+
+Select Gender, count(gender) as CountGender
+From EmployeeDemographics
+Where age > 30
+Group by Gender
+Order by CountGender desc -- larger to smaller
+
+
+Select *
+From EmployeeDemographics
+Order by age 
+
+Select *
+From EmployeeDemographics
+Order by age, Gender
+
+Select *
+From EmployeeDemographics
+Order by 4 desc

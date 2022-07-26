@@ -38,6 +38,6 @@ FROM WareHouseEmployeeDemographics
 
 SELECT EmployeeID, FirstName, Age
 FROM EmployeeDemographics
-UNION
+UNION  -- be care of different column using union
 SELECT EmployeeID, JobTitle, Salary
 FROM EmployeeSalary

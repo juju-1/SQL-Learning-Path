@@ -1,0 +1,28 @@
+/* 
+Where Statement
+=,<>not equal,<,>, and, or, like, null, not null, in
+*/
+
+Select *
+From EmployeeDemographics
+--Where FirstName = 'Jim'
+
+--Where FirstName <> 'Jim'
+
+--Where age > 30
+
+--Where age <= 32
+
+--Where age <= 32 and Gender = 'Female'
+
+--Where age <= 32 or Gender = 'Female'
+
+--Where LastName like '%s%' --s in everywhere
+
+--Where LastName like 's%' -- s in beginging
+
+--Where LastName like 's%o%' -- need in order
+
+--Where FirstName is  not Null
+
+--where FirstName in ('jim')

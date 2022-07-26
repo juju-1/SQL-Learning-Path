@@ -1,0 +1,33 @@
+SELECT *
+FROM EmployeeDemographics
+
+SELECT FirstName, LastName
+From EmployeeDemographics
+
+SELECT TOP 5 *
+From EmployeeDemographics
+
+SELECT DISTINCT(Gender)
+FROM EmployeeDemographics
+
+
+SELECT COUNT(LastName)
+FROM EmployeeDemographics
+
+SELECT COUNT(LastName) as LastNameCount
+FROM EmployeeDemographics
+
+SELECT *
+FROM EmployeeSalary
+
+SELECT MAX(Salary)
+FROM EmployeeSalary
+
+SELECT MIN(Salary)
+FROM EmployeeSalary
+
+SELECT AVG(Salary)
+FROM EmployeeSalary
+
+SELECT *
+FROM [ju-sql].dbo.EmployeeSalary

@@ -64,7 +64,11 @@ join EmployeeDemographics demo
 --lastname
 --age
 --DOB
-
+Select Substring(err.FirstName,1,3), Substring(dem.FirstName,1,3), Substring(err.LastName,1,3), Substring(dem.LastName,1,3)
+FROM EmployeeErrors err
+JOIN EmployeeDemographics dem
+	on Substring(err.FirstName,1,3) = Substring(dem.FirstName,1,3)
+	and Substring(err.LastName,1,3) = Substring(dem.LastName,1,3)
 
 
 -- using UPPER AND LOWER
